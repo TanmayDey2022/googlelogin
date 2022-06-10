@@ -1,0 +1,23 @@
+<div class="container-fluid vh-100 mt-5">
+  <div class="row h-100 d-flex justify-content-center">
+    <div class="col-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3">
+      <div class="card mb-3" style="max-width: 540px">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img [src]="userInfo.photo" class="img-fluid rounded-start h-100" />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h1>{{ userInfo.username }}</h1>
+              <h4>{{ userInfo.useremail }}</h4>
+              <div class="d-grid">
+                <button class="btn btn-danger" (click)="logOut()">Logout</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
